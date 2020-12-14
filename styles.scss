@@ -1,0 +1,83 @@
+@import "reset";
+@import "colors";
+
+body {
+  background-color: blue;
+}
+
+h1 {
+  color: Yellow;
+  background-color: transparentize($defaultbrackgroundColor, 0.2);
+  font-size: 40px;
+  animation-duration: 5s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+p {
+  color: yellow;
+  background-color: $defaultbrackgroundColor;
+  font-size: 20px;
+  animation-duration: 10s;
+  animation-name: wiggle;
+  animation-iteration-count: infinite;
+}
+  
+  @keyframes wiggle {
+  from {
+    margin-left: 0%;
+    width: 300%; 
+  }
+
+  50% {
+    margin-left: 25%;
+    width: 150%;
+  }
+    
+  75% {
+    margin-left: 10%;
+    width: 100%;
+  }
+    
+   85% {
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+  
+  @keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  75% {
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+  lu,li{
+    color: red;
+    background-color: red;
+    width: 10%;
+  }
+  
+table, th, td {
+  color: red;
+  border: 1px solid black;
+}
+  
+a:hover {
+  background-color: yellow;
+}
